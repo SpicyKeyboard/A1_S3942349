@@ -1,0 +1,47 @@
+INTRO TO PROGRAMMING ASSIGNMENT 1:
+#EXERCISE 1: -----------------------------------------
+#Student name: Heath Yates
+#Student number: 3942349
+
+favorite_colour = str(input('What is your favourite colour?: '))
+favorite_integer = int(input('What is your favourite integer (whole number)?: '))
+user_float = float(input('Please enter a float: '))
+print(favorite_colour, 'is such a beautiful color!')
+print('The division of your favorite integer by the float is: ',favorite_integer/user_float)
+
+#EXERCISE 2: -----------------------------------------
+#Student name: Heath Yates
+#Student number: 3942349
+
+try:
+  char_height = int(input('How tall is your character in centimeters? (whole numbers only!): '))
+except:
+  print('Please input the correct varible value for the questions!')
+  char_height = int(input('How tall is your character in centimeters? (whole numbers only!): '))
+char_type = input('What type is your character? (A or B): ')
+if char_type == 'A':
+  if char_height > 176:
+    print('Your character is tall.')
+  else:
+    print('Your character is not that tall.')
+  
+elif char_type =='B':
+  if char_height > 162:
+    print('Your character is tall.')
+  else:
+    print('Your character is not that tall.')  
+else:
+  print('Make sure that you input either \'A\' or \'B\' for the character type!')
+
+#EXERCISE 3: -----------------------------------------
+#Student name: Heath Yates
+#Student number: 3942349
+
+div_1 = int(input('What is the first divisor?:'))
+div_2 = int(input('What is the second divisor?:'))
+upper_bound = int(input('What is the upper bound?:'))
+for i in range(upper_bound):
+  if (i+1)%div_1 == 0:
+    print(div_1, 'is divisble by', i+1)
+  if (i+1)%div_2 ==0:
+    print(div_2, 'is divisble by', i+1)
